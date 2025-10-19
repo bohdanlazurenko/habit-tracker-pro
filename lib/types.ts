@@ -1,7 +1,16 @@
 export interface Habit {
   id: string
   name: string
-  description: string
+  description?: string
   createdAt: string
-  completedDates: string[]
+  color: string
+  icon: string
+}
+
+export interface HabitEntry {
+  id: string
+  habitId: string
+  date: string
+  completed: boolean
+  completedAt?: string
 }
