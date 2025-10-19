@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Habit Tracker Pro',
-  description: 'Track your daily habits and build better routines',
+  description: 'Track your daily habits and build consistency',
 }
 
 export default function RootLayout({
@@ -14,7 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-background font-sans antialiased">
-        {children}
+        <main className="container mx-auto px-4 py-8">
+          {children}
+        </main>
       </body>
     </html>
   )

@@ -1,22 +1,23 @@
 # Habit Tracker Pro
 
-A modern habit tracking application built with Next.js 14, TypeScript, and Tailwind CSS.
+A simple and effective habit tracking application built with Next.js 14, TypeScript, and Tailwind CSS. Track your daily habits, monitor your progress, and build consistency.
 
 ## Features
 
-- Create and manage daily habits
-- Visual calendar view of habit tracking
-- Track habit completion over time
-- Responsive design for all devices
-- Clean and intuitive user interface
+- ✅ Create and manage daily habits
+- 📊 Track completion statistics and streaks
+- 📈 Visual progress monitoring
+- 💾 Local storage persistence
+- 📱 Responsive design
+- 🎯 Daily check-off functionality
 
 ## Tech Stack
 
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- Lucide React (Icons)
-- Date-fns (Date utilities)
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Beautiful icons
+- **date-fns** - Date manipulation utilities
 
 ## Getting Started
 
@@ -31,20 +32,36 @@ A modern habit tracking application built with Next.js 14, TypeScript, and Tailw
    ```
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## Usage
+
+1. **Create Habits**: Click "Add New Habit" to create a new habit with a name and optional description
+2. **Track Daily**: Check off habits as you complete them each day
+3. **View Stats**: Navigate to the Statistics page to see your progress, streaks, and completion rates
+4. **Manage Habits**: Delete habits you no longer want to track
+
 ## Project Structure
 
-- `app/` - Next.js app router pages and API routes
-- `components/` - Reusable React components
-- `lib/` - Utility functions and type definitions
-- `public/` - Static assets
-
-## API Endpoints
-
-- `GET /api/ping` - Health check endpoint
-- `GET /api/habits` - Get all habits
-- `POST /api/habits` - Create a new habit
-- `PUT /api/habits/[id]` - Update a habit
-- `DELETE /api/habits/[id]` - Delete a habit
+```
+habit-tracker-pro/
+├── app/
+│   ├── api/ping/          # Health check endpoint
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Home page
+│   └── stats/page.tsx     # Statistics page
+├── components/
+│   ├── ui/
+│   │   └── button.tsx     # Reusable button component
+│   ├── habit-form.tsx     # Habit creation form
+│   ├── habit-list.tsx     # List of habits
+│   └── stats-card.tsx     # Individual habit statistics
+├── lib/
+│   ├── hooks/
+│   │   └── use-habits.ts  # Habit management hook
+│   ├── types.ts           # TypeScript type definitions
+│   └── utils.ts           # Utility functions
+└── public/                # Static assets
+```
 
 ## Scripts
 
@@ -55,4 +72,4 @@ A modern habit tracking application built with Next.js 14, TypeScript, and Tailw
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License
